@@ -1,0 +1,20 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2758
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww16440\viewh13040\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Bootcamp Module 21 Report\
+Emilia Roberts\
+\
+The target for the model is the IS_SUCCESFUL column). The features are every other column minus \'91EIN\'92 and \'91NAME\'92, which are identification columns. This was all handled in the data preprocessing section. Initially, 2 hidden layers with 3 neurons each (activation function: rely) were used, with a sigmoid output function. 10 epochs were chosen as the model quickly plateaued to its maximum accuracy. I was not able to hit a 0.75 accuracy value using this model.\
+\
+There were 3 optimization methods used for this module. The first was effecting the input data, setting the thresholds for creating the \'93Other\'94 category to be lower (for greater detail in analysis), along with removing the special considerations columns from the test data. 10 epochs with that new input data resulted in (Loss: 0.575 and Accuracy of 0.723). This is still below the wanted 0.75 accuracy value. This was with two hidden layers with 5 neurons in each, with rely activation functions for hidden layers and sigmoid for output layer. This did not result in a higher accuracy value, although it did result in a slightly lower loss value (Loss: 0.556 and Accuracy:0.723). A third attempt was made, increasing the number of epochs to 20, increasing the number of hidden layers to 3, with each having 8 neurons, and changing the third hidden layer activation function to sigmoid for increased complexity. This resulted in a slightly higher accuracy of 0.725, with the same loss as the second model optimization. This unfortunately meant that the 0.75 accuracy was not achieved. \
+\
+Overall results:\
+Model 1: (Loss: 0.575 and Accuracy of 0.723)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Model 2: (Loss: 0.556 and Accuracy of 0.723)\
+Model 3: (Loss: 0.556 and Accuracy of 0.725)\
+}
